@@ -9,7 +9,8 @@ Note: you will not want to work in the base environment ; instead, you will want
 in particular to install specific packages/softwares (in case the install would turn wrong, you can simply delete the environment 
 and you base python will not be affected
 
-2)
+2) Create a new environment:
+conda create --name py36 python=3.6   ===> py36 is the new environment name
 
 
 # INSTALL OASYS/SHADOW
