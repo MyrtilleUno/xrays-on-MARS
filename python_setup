@@ -1,0 +1,36 @@
+# Tips to set-up python working on my mac
+
+# Python CONDA environments
+
+1) To activate the base environment type : $ conda activate   =====> NOT WORKING ???
+-Instead : $source /anaconda3/bin/activate  ===> WORKS..
+-to exit the environment type: $ conda deactivate
+Note: you will not want to work in the base environment ; instead, you will want to create a clone environment to work in, 
+in particular to install specific packages/softwares (in case the install would turn wrong, you can simply delete the environment 
+and you base python will not be affected
+
+2)
+
+
+# INSTALL OASYS/SHADOW
+1) follow the instructions from Mauro Rovezzi's github.
+2) pip install shadow3-18.1.24-cp36..... does not work ; 
+instead run: pip install shadow3
+3) To run OASYS:
+ python -m oasys.canvas -l4 --force-discovery
+
+
+#Issue with basic commands ?? (git, gcc...)
+I have once encountered:
+***
+xx@xxx:~% git
+git: error: unable to find utility "git", not a developer tool or in PATH
+*******
+SOLUTION:
+*******
+xx@xxxx:~% xcode-select --install
+xx@xxx:~% sudo xcode-select -s /Library/Developer/CommandLineTools
+Password:
+xx@xxxx:~% git
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+****
