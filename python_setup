@@ -35,3 +35,28 @@ Password:
 xx@xxxx:~% git
 usage: git [--version] [--help] [-C <path>] [-c name=value]
 ****
+
+
+
+
+# Making pymatgen package working with python2.7
+------------------------------------------------
+https://pypi.org/project/pymatgen/1.2.1/
+
+- install python2.7 from python.org
+- install virtualenv :
+pip2.7 install virtualenv
+- create environment :
+/Library/Frameworks/Python.framework/Versions/2.7/bin/virtualenv my_projet
+- activate environment :
+source bond_distances_project/bin/activate
+
+- install the package :
+ pip install numpy
+  pip install scipy
+  pip install nose
+  
+  pip install https://files.pythonhosted.org/packages/71/ca/ac49e07125553519abb91b36dd7a5a393eec1abdecaddd6291f09aa2946a/pymatgen-2018.6.27-cp27-cp27m-macosx_10_7_x86_64.whl
+  
+
+
