@@ -13,6 +13,10 @@ and you base python will not be affected
 conda create --name py36 python=3.6   ===> py36 is the new environment name
 
 
+3) Clone environment
+conda create --name myclone --clone myenv
+NOTE: Replace myclone with the name of the new environment. Replace myenv with the name of the existing environment that you want to copy.
+
 # INSTALL OASYS/SHADOW
 1) follow the instructions from Mauro Rovezzi's github.
 2) pip install shadow3-18.1.24-cp36..... does not work ; 
